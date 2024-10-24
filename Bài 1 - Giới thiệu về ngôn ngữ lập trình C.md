@@ -127,4 +127,8 @@ gcc main.c -o main.o
 
 Liên kết tất cả các file `.o` thành một chương trình `main.exe` hoàn chỉnh.
 
+```
+ld <danh sách file .o> -o main.exe
+```
+
 ## Tài liệu tham khảo

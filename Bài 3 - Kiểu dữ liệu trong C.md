@@ -35,11 +35,11 @@ Bài này chỉ nói tới các kiểu dữ liệu cơ bản.
 
 Số nguyên gồm các số nguyên dương (1, 2, 3,...), các đối số(-1, -2, -3,...) và số 0. Có 5 loại kiểu dữ liệu dùng để lưu trữ các số nguyên:
 
-- `char`: chiếm 1 byte bộ nhớ. Giá trị từ -128 đến 127
-- `short`: chiếm 2 byte bộ nhớ. Giá trị từ -32,768 đến 32,767
-- `int`: chiếm 4 byte bộ nhớ. Giá trị từ -2,147,483,648 đến 2,147,483,647
+- `char`: chiếm 1 byte bộ nhớ. Giá trị từ -2^7 đến 2^7-1
+- `short`: chiếm 2 byte bộ nhớ. Giá trị từ -2^15 đến 2^15 - 1
+- `int`: chiếm 4 byte bộ nhớ. Giá trị từ -2^31 đến 2^31-1
 - `long`: chiếm 4 byte bộ nhớ. Tương tự `int`
-- `long long`: chiếm 8 byte bộ nhớ. Giá trị từ -2^64 đến 2^64 - 1.
+- `long long`: chiếm 8 byte bộ nhớ. Giá trị từ -2^63 đến 2^63 - 1.
 
 > Lưu ý: số lượng byte mỗi kiểu dữ liệu chiếm phụ thuộc vào trình biên dịch và kiến trúc CPU. Con số ở trên từ trình biên dịch C cho vi điều khiển STM32.
 
@@ -49,7 +49,7 @@ Thêm từ khoá `unsigned`, ta được kiểu dữ liệu **số nguyên khôn
 - `unsigned short`: Giá trị từ 0 đến 65535
 - `unsigned int`: Giá trị từ 0 đến 4,294,967,295
 - `unsigned long`: Tương tự `int`
-- `unsigned long long`: Giá trị từ 0 đến 2^65 - 1.
+- `unsigned long long`: Giá trị từ 0 đến 2^64 - 1.
 
 Để rút ngắn tên kiểu dữ liệu và tăng tính tương thích của code giữa các kiến trúc CPU, chuẩn C99 thêm vào các kiểu dữ liệu thay thế, định nghĩa trong thư viện chuẩn `stdint.h`:
 
@@ -88,7 +88,9 @@ Ví dụ:
 
 ```c++
 float a = 1.35f;	// Chữ f được dùng số là kiểu float.
+float a = 1.35;	// Chữ f được dùng số là kiểu float.
 double b = 3.141592654;
+double b = 3.141592654f;
 ```
 
 ## Kiểu ký tự
@@ -155,7 +157,7 @@ float result = a + b; // `a` tự động được chuyển sang kiểu `float` 
 Người lập trình có thể ép kiểu tường minh bằng cú pháp:
 
 
-`<kiểu dữ liệu mới> <biểu thức>;`
+`(<kiểu dữ liệu mới>) <biểu thức>;`
 
 Ví dụ:
 

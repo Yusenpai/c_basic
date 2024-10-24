@@ -90,7 +90,7 @@ int main(){
 
 ## Khai báo hằng số
 
-Khai báo hằng số tương tự với khai báo biến và thêm từ khoá const. Khác với biến, khai báo hằng số bắt buộc phải có giá trị khởi tạo.
+Khai báo hằng số tương tự với khai báo biến và thêm từ khoá `const`. Khác với biến, khai báo hằng số bắt buộc phải có giá trị khởi tạo.
 
 Cú pháp:
 
