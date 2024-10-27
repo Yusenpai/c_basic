@@ -3,13 +3,13 @@
 ## Mục lục
 
 - [Bài 6: Câu lệnh điều kiện và vòng lặp](#bài-6-câu-lệnh-điều-kiện-và-vòng-lặp)
-	- [Mục lục](#mục-lục)
-	- [Câu lệnh điều kiện `if`...`else`](#câu-lệnh-điều-kiện-ifelse)
-	- [Câu điều kiện `switch`...`case`](#câu-điều-kiện-switchcase)
-	- [Vòng lặp `for`](#vòng-lặp-for)
-	- [Vòng lặp `while` và `do`...`while`](#vòng-lặp-while-và-dowhile)
-	- [Từ khóa `continue`, `break`, `goto`](#từ-khóa-continue-break-goto)
-	- [Câu hỏi và bài tập](#câu-hỏi-và-bài-tập)
+  - [Mục lục](#mục-lục)
+  - [Câu lệnh điều kiện `if`...`else`](#câu-lệnh-điều-kiện-ifelse)
+  - [Câu điều kiện `switch`...`case`](#câu-điều-kiện-switchcase)
+  - [Vòng lặp `for`](#vòng-lặp-for)
+  - [Vòng lặp `while` và `do`...`while`](#vòng-lặp-while-và-dowhile)
+  - [Từ khóa `continue`, `break`, `goto`](#từ-khóa-continue-break-goto)
+  - [Câu hỏi và bài tập](#câu-hỏi-và-bài-tập)
 
 ## Câu lệnh điều kiện `if`...`else`
 
@@ -63,7 +63,7 @@ switch (expression) {
         // Code thực thi nếu expression == value1 hoặc value2 hoặc value3
         break;
     case value4:
-        // Code thực thi nếu expression == value2
+        // Code thực thi nếu expression == value4
         break;
     default:
         // Code thực thi nếu không khớp với bất kỳ giá trị nào
@@ -73,6 +73,8 @@ switch (expression) {
     case value1 ... value2:
         // Code thực thi nếu expression có giá trị từ value1 tới value2. Là tính năng chỉ hỗ trợ trên một số trình biên dịch
         break;
+    case 10 ... 20:
+        // Code sẽ chạy nếu expression nằm trong khoảng [10; 20]
 }
 
 ```
@@ -102,7 +104,7 @@ do {
 } while (condition);
 ```
 
->> Lưu ý: `while(1){}` và `for(;;){}` là tương đương nhau.
+> Lưu ý: `while(1){}` và `for(;;){}` là tương đương nhau.
 
 ## Từ khóa `continue`, `break`, `goto`
 

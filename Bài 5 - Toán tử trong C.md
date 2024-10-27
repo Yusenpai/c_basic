@@ -4,7 +4,7 @@
 
 - [Bài 5: Toán tử trong C](#bài-5-toán-tử-trong-c)
 	- [Mục lục](#mục-lục)
-- [Các loại toán tử trong C](#các-loại-toán-tử-trong-c)
+	- [Các loại toán tử trong C](#các-loại-toán-tử-trong-c)
 	- [Toán tử số học (Arithmetic Operators)](#toán-tử-số-học-arithmetic-operators)
 	- [Toán tử một ngôi](#toán-tử-một-ngôi)
 	- [Toán tử so sánh](#toán-tử-so-sánh)
@@ -20,7 +20,7 @@
 	- [Câu hỏi và bài tập](#câu-hỏi-và-bài-tập)
 	- [Tài liệu tham khảo](#tài-liệu-tham-khảo)
 
-# Các loại toán tử trong C
+## Các loại toán tử trong C
 
 Toán tử trong C là các ký hiệu dùng để thực hiện các phép toán trên các toán hạng. Trong C có các loại toán tử:
 
@@ -159,7 +159,7 @@ Thứ tự thực hiện phép toán xác định trình tự thực hiện các
 ## Câu hỏi và bài tập
 
 1. Viết code kiểm tra một số chẵn dùng toán tử điều kiện ba ngôi
-2. Cho một biến `a`: `uint8_t a = 0b11110000`. Viết code để thay đổi bit 3 của `a` thành 1, mà không làm thay đổi các bit khác.
+2. Cho một biến `a`: `uint8_t a = 0bxxxx0xxx`. Viết code để thay đổi bit 3 của `a` thành 1, mà không làm thay đổi các bit khác.
 3. Cũng biến `a`, viết code để thay đổi bit 6 và bit 7 của số `a` thành 0, mà không làm thay đổi các bit khác.
 4. Viết đoạn chương trình in số `a` dài 8 bit lên màn hình, dưới dạng số nhị phân.
 

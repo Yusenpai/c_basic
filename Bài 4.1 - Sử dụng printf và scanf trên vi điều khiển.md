@@ -21,6 +21,8 @@ Trên vi điều khiển, `stdout` là một bộ đệm, không có công dụn
 // Định nghĩa lại hàm _write(), dùng USART1 để gửi chuỗi lên máy tính.
 int _write(int file, char *data, int len) {
     HAL_UART_Transmit(&huart1, (uint8_t *)data, len, HAL_MAX_DELAY);
+    HAL_SPI_Transmit(*data);
+    HAL_I2C_Transmit(...)
     return len;
 }
 ```
