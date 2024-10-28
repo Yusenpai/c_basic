@@ -58,9 +58,21 @@ Khai báo:
 	```c++
 	void GPIOA_Write(uint16_t data);
 	```
-2. Bạn có một mảng số `uint8_t nums[10];`. Viết một hàm in số lên màn hình theo quy tắc: mỗi số là một số 16 bit, được ghép từ phần tử `i` và `i+1` của `nums`, với `i` chẵn.
+
+2. Viết lại hàm `digitalWrite(pin, mode);` của thư viện Arduino, dùng để điều khiển các chân PA0..15 của STM32F103C8 như sau:
+	```c++
+	/// @brief Thay đổi giá trị ngõ ra của chân GPIO
+	/// @param pin có giá trị từ 0..15, tương ứng với chân PA0..15
+	/// @param mode giá trị ngõ ra. mode = 0 thì ngõ ra mức thấp, mode = 1 thì ngõ ra mức cao.
+	void digitalWrite(uint8_t pin, uint8_t mode);
+	```
+
+3. Bạn có một mảng số `uint8_t nums[10];`. Viết một hàm in số lên màn hình theo quy tắc: mỗi số là một số 16 bit, được ghép từ phần tử `i` và `i+1` của `nums`, với `i` chẵn.
 	```c++
 	void print16bit(const uint8_t nums[]);
 	```
 
+## Bài tập thêm
+
+1. Bạn có một con IC đo nhiệt độ. Nhiệt độ dưới dạng số 16 bit được lưu trong bộ nhớ của IC, có thể đọc thông qua I2C
 
