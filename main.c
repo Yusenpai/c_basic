@@ -1,10 +1,21 @@
 #include <stdio.h>
 
-int main()
-{
-	unsigned short a = 0b1111000011110000;
-	if (a & (1 << 8))
-		printf("OK\n");
-	else
-		printf("NO\n");
+void funcA(int a){
+	a = a + 1;
+}
+
+void funcB(int *a){
+	*a = *a + 1;
+}
+
+int main(){
+	int a = 10;
+
+	funcA(a);
+	printf("%d\n", a);
+
+	funcB(&a);
+	printf("%d\n", a);
+	
+	return 0;
 }
