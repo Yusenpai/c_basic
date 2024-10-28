@@ -10,7 +10,7 @@
 	- [Tham số và trả về](#tham-số-và-trả-về)
 	- [Các kỹ thuật truyền tham số: truyền bằng giá trị và truyền bằng tham chiếu.](#các-kỹ-thuật-truyền-tham-số-truyền-bằng-giá-trị-và-truyền-bằng-tham-chiếu)
 		- [Truyền giá trị](#truyền-giá-trị)
-		- [Truyền tham số](#truyền-tham-số)
+		- [Truyền tham chiếu](#truyền-tham-chiếu)
 	- [Hàm main()](#hàm-main)
 	- [Con trỏ hàm và hàm Callback](#con-trỏ-hàm-và-hàm-callback)
 	- [Câu hỏi và bài tập](#câu-hỏi-và-bài-tập)
@@ -62,9 +62,9 @@ Ví dụ:
 
 ```
 
-### Truyền tham số
+### Truyền tham chiếu
 
-Truyền tham số là:
+Truyền tham chiếu là:
 
 Ví dụ:
 
