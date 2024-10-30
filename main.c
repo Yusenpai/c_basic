@@ -1,7 +1,20 @@
 #include <stdio.h>
 int main()
 {
-	int arr[3] = {10, 20, 30};
-	int *ptr = arr; // ptr trỏ tới phần tử đầu tiên của mảng
-	printf("%d\n", *ptr);
+	int a = 22;
+	int *p = &a;
+	printf("p = %u\n", p);
+	p++;
+	printf("p++ = %u\n", p);
+	p--;
+	printf("p-- = %u\n", p);
+
+	char c = 'a';
+	char *r = &c;
+	printf("r = %u\n", r);
+	r++;
+	printf("r++ = %u\n", r);
+	r--;
+	printf("r-- = %u\n", r);
+	return 0;
 }
