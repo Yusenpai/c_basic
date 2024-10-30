@@ -105,7 +105,7 @@ Ngoài ra còn các kiểu con trỏ đặc biệt khác:
 	int (*pArr)[N]; // Khai báo con trỏ mảng pArr trỏ tới mảng có N phần tử.
 	```
 
-	> Lưu ý: **Con trỏ mảng** và **con trỏ tới phần tử đầu tiên của mảng** là khác nhau(?). Dùng toán tử `sizeof()` sẽ rõ!
+	> Lưu ý: **Con trỏ mảng** và **con trỏ tới phần tử đầu tiên của mảng** là khác nhau(?). ~~Dùng toán tử `sizeof()` sẽ rõ!~~
 
 - Con trỏ hàm: Là con trỏ trỏ tới một hàm, cho phép gọi hàm thông qua con trỏ này.
   
@@ -223,7 +223,7 @@ int *p = (int *)0x7fff5fbffabc;  // Ép số nguyên thành con trỏ
 Tương tự, ta có thể ép kiểu một số nguyên thành một con trỏ hàm rồi gọi nó.
 
 ```c++
-int (*funcPtr)(void) = int (*)(void)(0x12345678); // Ép số nguyên thành con trỏ hàm
+int (*funcPtr)(void) = (int (*)(void))(0x12345678); // Ép số nguyên thành con trỏ hàm
 funcPtr(); // Gọi hàm thông qua con trỏ hàm.
 ```
 
