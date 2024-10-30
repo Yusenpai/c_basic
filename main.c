@@ -1,21 +1,7 @@
 #include <stdio.h>
-
-void funcA(int a){
-	a = a + 1;
-}
-
-void funcB(int *a){
-	*a = *a + 1;
-}
-
-int main(){
-	int a = 10;
-
-	funcA(a);
-	printf("%d\n", a);
-
-	funcB(&a);
-	printf("%d\n", a);
-	
-	return 0;
+int main()
+{
+	int arr[3] = {10, 20, 30};
+	int *ptr = arr; // ptr trỏ tới phần tử đầu tiên của mảng
+	printf("%d\n", *ptr);
 }

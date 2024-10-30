@@ -9,7 +9,7 @@
 		- [Định nghĩa hàm](#định-nghĩa-hàm)
 	- [Tham số và trả về](#tham-số-và-trả-về)
 	- [Các kỹ thuật truyền tham số: truyền bằng giá trị và truyền bằng tham chiếu.](#các-kỹ-thuật-truyền-tham-số-truyền-bằng-giá-trị-và-truyền-bằng-tham-chiếu)
-		- [Truyền giá trị](#truyền-giá-trị)
+		- [Truyền tham trị](#truyền-tham-trị)
 		- [Truyền tham chiếu](#truyền-tham-chiếu)
 	- [Hàm main()](#hàm-main)
 	- [Con trỏ hàm và hàm Callback](#con-trỏ-hàm-và-hàm-callback)
@@ -52,9 +52,9 @@ Từ khoá `return` mang ý nghĩa:
 
 ## Các kỹ thuật truyền tham số: truyền bằng giá trị và truyền bằng tham chiếu.
 
-### Truyền giá trị
+### Truyền tham trị
 
-Truyền giá trị là:
+Truyền tham trị là:
 
 Ví dụ:
 
@@ -146,29 +146,30 @@ Ví dụ sử dụng con trỏ hàm và hàm callback:
 	#include <stdio.h>
 
 	void funcA(int a){
-	a = a + 1;
+		a = a + 1;
 	}
 
 	void funcB(int *a){
-	*a = *a + 1;
+		*a = *a + 1;
 	}
 
 	int main(){
-	int a = 10;
+		int a = 10;
 
-	funcA(a);
-	printf("%d\n", a);
+		funcA(a);
+		printf("%d\n", a);
 
-	funcB(&a);
-	printf("%d\n", a);
+		funcB(&a);
+		printf("%d\n", a);
 
-	return 0;
+		return 0;
 	}
 	```
 ### Bài tập
 
 1. Viết hàm nhận hai tham số, giá trị trả về là kết quả tổng hai số.
 2. Viết hàm hoán đổi hai số `a` và `b`. Dùng con trỏ để thay đổi giá trị của `a` và `b`. Trả về `void`.
+
 ## Bài tập thêm
 
 1. Khi nào thì nên truyền giá trị, khi nào thì truyền tham chiếu?
