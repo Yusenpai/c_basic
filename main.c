@@ -1,20 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+struct Point
+{
+	uint8_t x;
+	uint32_t y;
+};
+
 int main()
 {
-	int a = 22;
-	int *p = &a;
-	printf("p = %u\n", p);
-	p++;
-	printf("p++ = %u\n", p);
-	p--;
-	printf("p-- = %u\n", p);
-
-	char c = 'a';
-	char *r = &c;
-	printf("r = %u\n", r);
-	r++;
-	printf("r++ = %u\n", r);
-	r--;
-	printf("r-- = %u\n", r);
-	return 0;
+	printf("Kích thước của struct Point là %d\n", sizeof(struct Point));
 }
