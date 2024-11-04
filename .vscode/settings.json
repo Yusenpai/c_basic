@@ -3,6 +3,7 @@
 		"stdio.h": "c",
 		"_stdio.h": "c",
 		"string.h": "c",
-		"_string.h": "c"
+		"_string.h": "c",
+		"stdint.h": "c"
 	}
 }
